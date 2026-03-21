@@ -16,11 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - kernel: 'SL-16.0'
-            runs_on: 'ubuntu-24.04'
-            arch: 'x86_64'
-            llvm-version: '18'
-            pahole: 'master'
           - kernel: 'SL-16.1'
             runs_on: 'ubuntu-24.04'
             arch: 'x86_64'
