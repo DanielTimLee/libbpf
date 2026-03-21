@@ -1,4 +1,4 @@
-diff --git a/tools/testing/selftests/bpf/prog_tests/d_path.c b/tools/testing/selftests/bpf/prog_tests/d_path.c                                                                                                                                                                                                                                                         18:08:55 [268/1874]
+diff --git a/tools/testing/selftests/bpf/prog_tests/d_path.c b/tools/testing/selftests/bpf/prog_tests/d_path.c
 index ccc768592e66..1a2a2f1abf03 100644
 --- a/tools/testing/selftests/bpf/prog_tests/d_path.c
 +++ b/tools/testing/selftests/bpf/prog_tests/d_path.c
@@ -179,7 +179,7 @@ index c49f44444752..b91056529f69 100644
 +SEC("socket")
 +__description("conditional jump on same register, branch taken")
 +__not_msg("20: (b7) r0 = 1 {{.*}} R0=1")
-+__success __log_level(2)                                                                                                                                                                                                                                                                                                                                               18:08:55 [87/1874]
++__success __log_level(2)
 +__retval(0) __flag(BPF_F_TEST_REG_INVARIANTS)
 +__naked void condition_jump_on_same_register(void *ctx)
 +{
